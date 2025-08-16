@@ -2,14 +2,14 @@
 
 pkgname=3ds-sdl2_mixer
 pkgver=2.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A sample multi-channel audio mixer library."
 arch=(any)
 url="https://libsdl.org/projects/SDL_mixer/"
 license=("zlib")
 options=(!strip libtool staticlibs)
 makedepends=('3ds-cmake' 'dkp-toolchain-vars')
-depends=('wut' '3ds-sdl2')
+depends=('3ds-sdl2')
 source=("${url}/release/SDL2_mixer-${pkgver}.tar.gz")
 groups=('3ds-portlibs' '3ds-sdl2-libs')
 
